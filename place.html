@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place</title>
+    <link rel="stylesheet" href="./css/placelayout.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Place Function</h1>
+        <p>The place function impacts the columns and rows of the grid at the same time. <br> It is the same as using a justify and an align fuction, but with one command.<br> Below is an example of a grid prior to any changes to justification or alignment:</p>
+
+    </header>
+    <figure class="set demo">
+        <div class="text One">One</div>
+        <div class="text Two">Two</div>
+        <div class="text Three">Three</div>
+        <div class="text Four">Four</div>
+        <div class="text Five">Five</div>
+        <div class="text Six">Six</div>
+        <div class="text Seven">Seven</div>
+        <div class="text Eight">Eight</div>
+        <div class="text Nine">Nine</div>
+    </figure>
+    <main>
+        <h2>Place Content:</h2>
+        <p class="intro">
+            Differing container size to grid ratios can determine what types of things you can do with place. When the total grid height and width is less than those of the container, you can place-content to justify and align the along their respective row and column
+            axes.
+            </br>
+            The possible values are: start, end, center, stretch, space-around, space-between or space evenly.</br>
+            Here are examples with center, space evenly, and end:
+        </p>
+        <section class="content group">
+            <section class="content1 set">
+                <div class="text One">One</div>
+                <div class="text Two">Two</div>
+                <div class="text Three">Three</div>
+                <div class="text Four">Four</div>
+                <div class="text Five">Five</div>
+                <div class="text Six">Six</div>
+                <div class="text Seven">Seven</div>
+                <div class="text Eight">Eight</div>
+                <div class="text Nine">Nine</div>
+            </section>
+            <section class="content2 set">
+                <div class="text One">One</div>
+                <div class="text Two">Two</div>
+                <div class="text Three">Three</div>
+                <div class="text Four">Four</div>
+                <div class="text Five">Five</div>
+                <div class="text Six">Six</div>
+                <div class="text Seven">Seven</div>
+                <div class="text Eight">Eight</div>
+                <div class="text Nine">Nine</div>
+            </section>
+            <section class="content3 set">
+                <div class="text One">One</div>
+                <div class="text Two">Two</div>
+                <div class="text Three">Three</div>
+                <div class="text Four">Four</div>
+                <div class="text Five">Five</div>
+                <div class="text Six">Six</div>
+                <div class="text Seven">Seven</div>
+                <div class="text Eight">Eight</div>
+                <div class="text Nine">Nine</div>
+            </section>
+        </section>
+        <section class="information content-info">
+            <p class="info info1"> <em>.content1 { </br>
+                place-content: center; }</em></br> All "content" is moved to the center of the page. </br>
+                No spacing, all content is squished together.
+            </p>
+            <p class="info info2"><em>.content2 {</br>
+                place-content: space-evenly;}</em></br> The content is spaced evenly in the page.</br>
+                Any extra space is split to the gap and sides.
+
+            </p>
+            <p class="info info3"><em>.content3 {</br>
+                place-content: end;}</em></br>
+                All "content" is moved to the end of the columns and rows. </br>
+                No spacing, all content is squished together.
+            </p>
+        </section>
+
+        <h2>Place Items</h2>
+        <p> The CSS place-items property defines the default place-self for all items of the box. In block-level layouts, it places the items inside their containing block on both the column and row axis. The location of the individual boxes in the grid is
+            not changed.</br>
+            The possible values are start, end, center and stretch. Here are examples with start, end, and stretch:</p>
+        <section class="items group">
+            <section class="items1 set">
+                <div class="text One">One</div>
+                <div class="text Two">Two</div>
+                <div class="text Three">Three</div>
+                <div class="text Four">Four</div>
+                <div class="text Five">Five</div>
+                <div class="text Six">Six</div>
+                <div class="text Seven">Seven</div>
+                <div class="text Eight">Eight</div>
+                <div class="text Nine">Nine</div>
+            </section>
+            <section class="items2 set">
+                <div class="text One">One</div>
+                <div class="text Two">Two</div>
+                <div class="text Three">Three</div>
+                <div class="text Four">Four</div>
+                <div class="text Five">Five</div>
+                <div class="text Six">Six</div>
+                <div class="text Seven">Seven</div>
+                <div class="text Eight">Eight</div>
+                <div class="text Nine">Nine</div>
+            </section>
+            <section class="items3 set">
+                <div class="text One">One</div>
+                <div class="text Two">Two</div>
+                <div class="text Three">Three</div>
+                <div class="text Four">Four</div>
+                <div class="text Five">Five</div>
+                <div class="text Six">Six</div>
+                <div class="text Seven">Seven</div>
+                <div class="text Eight">Eight</div>
+                <div class="text Nine">Nine</div>
+            </section>
+        </section>
+        <section class="information content-info">
+            <p class="info info-1"><em>.items1 {</br>
+                place-items: start;}</em></br>
+                The border is shrunk to fit the content of each and all individual boxes. The boxes are still placeed by row and cannot crossover the gridline that would be present if the box was place-content:center.
+            </p>
+            <p class="info info-2"><em>.items2 {</br>
+                place-items: end;}</em></br>
+                The border is shrunk to fit the content of each and all individual boxes. The individual box content moved to the bottom right corners of the grid-lines.</p>
+            <p class="info info-3"><em>.items3 {</br>
+                place-items: stretch;}</em></br>
+                The borders of the individual containers are stretched to fit the grid-lines. This looks like out default grid</p>
+        </section>
+
+        <h2>Place Self</h2>
+        <p>Both justify-self and align-self are analogous to the equivalent properties available on the container (justify-items and align-items), but they apply on specific items that should be positioned differently than the rest of the grid items. Place
+            self is once again a shortcut to justify and align at the same time.</p>
+        <section class="self group">
+            <section class="self1 set">
+                <div class="text self1-One">One</div>
+                <div class="text self1-Two">Two</div>
+                <div class="text self1-Three">Three</div>
+                <div class="text self1-Four">Four</div>
+                <div class="text self1-Five">Five</div>
+                <div class="text self1-Six">Six</div>
+                <div class="text self1-Seven">Seven</div>
+                <div class="text self1-Eight">Eight</div>
+                <div class="text self1-Nine">Nine</div>
+            </section>
+            <section class="self2 set">
+                <div class="text self2-One">One</div>
+                <div class="text self2-Two">Two</div>
+                <div class="text self2-Three">Three</div>
+                <div class="text self2-Four">Four</div>
+                <div class="text self2-Five">Five</div>
+                <div class="text self2-Six">Six</div>
+                <div class="text self2-Seven">Seven</div>
+                <div class="text self2-Eight">Eight</div>
+                <div class="text self2-Nine">Nine</div>
+            </section>
+            <section class="self3 set">
+                <div class="text self3-One">One</div>
+                <div class="text self3-Two">Two</div>
+                <div class="text self3-Three">Three</div>
+                <div class="text self3-Four">Four</div>
+                <div class="text self3-Five">Five</div>
+                <div class="text self3-Six">Six</div>
+                <div class="text self3-Seven">Seven</div>
+                <div class="text self3-Eight">Eight</div>
+                <div class="text self3-Nine">Nine</div>
+            </section>
+        </section>
+        <section class="information content-info">
+            <p class="info info-1"><em></em>.self1-Six { <br> place-self: end;} </em><br> Box Six is Self placed to the ends of the gridline and everything inside of the defined grid is pushed down and right.
+            </p>
+            <p class="info info-2"><em>.self2 {<br>
+                place-content: center;
+            } <br>
+            .self2-Five {<br>
+                place-self: center;}</em> <br> You can double up and first center the content, then place one individual "self".
+            </p>
+            <p class="info info-3"><em>.self3 {<br>
+                place-self: end;}</em><br> Here, the self is the entire dotted box, and when placed end, the box moved to the bottom right corner of the gray background box. If you look at the rest of the page, all of the other boxes were centered.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="footer">
+            <a href="./index.html">
+                <h2> Home</h2>
+            </a>
+            <a href="./justify.html">
+                <h2> Justify</h2>
+            </a>
+            <a href="./place.html">
+                <h2> Place</h2>
+            </a>
+        </ul>
+    </footer>
+</body>
+
+</html>

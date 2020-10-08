@@ -1,0 +1,39 @@
+.content1 {
+    align-content: center;
+}
+
+.content2 {
+    align-content: space-evenly;
+}
+
+.content3 {
+    align-content: end;
+}
+
+.items1 {
+    align-items: start;
+}
+
+.items2 {
+    align-items: end;
+}
+
+.items3 {
+    align-items: stretch;
+}
+
+.self1-Six {
+    align-self: end;
+}
+
+.self2 {
+    align-content: center;
+}
+
+.self2-Five {
+    align-self: center;
+}
+
+.self3 {
+    align-self: end;
+}

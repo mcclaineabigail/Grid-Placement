@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+    color: rgb(132, 109, 184);
+}
+
+a {
+    text-decoration: none;
+    color: darkgoldenrod;
+}
+
+a:visited {
+    color: darkgoldenrod;
+}
+
+.group {
+    background-color: rgb(44, 44, 44);
+}
+
+.set {
+    border: dotted rgb(178, 238, 144);
+}
+
+.text {
+    border: dashed rgb(161, 94, 73);
+}
